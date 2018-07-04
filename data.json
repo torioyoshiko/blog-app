@@ -1,14 +1,8 @@
 {
-  "/home": {
-    "get": {
-      "data": [
-        {"id":1,"name": "Steve"}
-      ]
-    },
-    "post": {
-      "data": [
-        {"id":1,"name": "Steve French"}
-      ]
-    }
-  }
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "random" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ]
 }
