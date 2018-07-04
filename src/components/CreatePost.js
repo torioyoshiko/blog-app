@@ -1,5 +1,6 @@
 import React from 'react';
 import {Component} from 'react';
+import {connect} from 'react-redux';
 
 class CreatePost extends Component {
 
@@ -10,7 +11,11 @@ class CreatePost extends Component {
             id: new Date(),
             message
         };
-        console.log(data)
+        console.log(data);
+        this.props.dispatch({
+            type:'ADD_POST',
+            data});
+        this.getMessage.value = '';
     };
 
     render() {
@@ -29,4 +34,4 @@ class CreatePost extends Component {
     }
 }
 
-export default CreatePost;
+export default connect()(CreatePost);
