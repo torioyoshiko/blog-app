@@ -8,6 +8,7 @@ class AllPost extends Component {
         return (
             <div className="App">
                 <h1>Previous posts</h1>
+
                 {this.props.posts.map((post) => <Post key={post.id} post={post} />)}
             </div>
         );
