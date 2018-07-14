@@ -1,6 +1,6 @@
 {
   "posts": [
-    { "id": 1, "title": "json-server", "author": "random" }
+      { "id": 1, "title": "json-server", "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias et harum ipsum, omnis pariatur soluta." }
   ],
   "comments": [
     { "id": 1, "body": "some comment", "postId": 1 }
