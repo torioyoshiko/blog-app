@@ -24,6 +24,8 @@ class CreatePost extends Component {
                 <h1>Create Post</h1>
                 <form onSubmit={this.handleSubmit}>
                     <textarea
+                        rows="10"
+                        cols="40"
                         ref={(input)=>this.getMessage = input}
                         placeholder="Enter Post"
                     /><br/><br/>
