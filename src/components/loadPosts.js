@@ -1,10 +1,14 @@
-export default function loadPosts(url) {
-    fetch('/posts.json')
-        .then(function (response) {
-            return response.json()
-        }).then(function(json) {
-        console.log('parsed json', json)
-    }).catch(function(ex) {
-        console.log('parsing failed', ex)
-    })
+import React, { Component } from 'react';
+
+class Post extends Component {
+    render(){
+        return(
+            <div>
+                <p>{this.props.post.message}</p>
+            </div>
+        )
+    }
 }
+
+export default Post;
+

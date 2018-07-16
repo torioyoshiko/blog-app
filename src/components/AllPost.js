@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import Post from './Post';
-import {getPosts} from "../reducers/posts";
-
+import Post from './loadPosts';
+import getPosts from '../actions/posts';
 class AllPost extends Component {
     render() {
         return (
@@ -10,6 +9,7 @@ class AllPost extends Component {
                 <h1>Previous posts</h1>
                 <button onClick={this.props.onGetPosts}>Load previous posts</button>
                 {this.props.posts.map((post) => <Post key={post.id} post={post} />)}
+                {/*не будут отображаться старые посты*/}
             </div>
         );
     }
