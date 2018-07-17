@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import Post from './loadPosts';
 import getPosts from '../actions/posts';
+
 class AllPost extends Component {
     render() {
         return (
@@ -25,7 +26,7 @@ export default connect(
     addStateToProps,
     dispatch =>({
         onGetPosts: () =>{
-            dispatch(getPosts());
+            getPosts();
         }
     })
 )(AllPost);

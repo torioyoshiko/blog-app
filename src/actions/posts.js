@@ -1,29 +1,17 @@
-var previosPosts = [
-    {
-        id: 1,
-        name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, repellat?'
-    },
-    {
-        id: 2,
-        name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, repellat?'
-    },
-    {
-        id: 3,
-        name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, repellat?'
-    },
-    {
-        id: 4,
-        name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, repellat?'
-    },
-    {
-        id: 5,
-        name: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, repellat?'
-    }
-];
+const url = `${window.location.href}previousPosts`;
 
-const getPosts = () => dispatch => {
+const getPosts = () => {
+
     console.log('posts loaded');
-    dispatch({type: 'FETCH_POSTS_SUCCESS', payload: previosPosts});
+    fetch(url, {
+        method: 'get'
+    })
+        .then(response => response.json())
+        .then(response => response.data)
+        .then(data => {
+            console.log(data);
+        })
+        .catch(error => console.log('Request failed ', error));
 };
 
 export default getPosts;
