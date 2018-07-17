@@ -1,13 +1,10 @@
-const url = `${window.location.href}previousPosts`;
+const url = `http://localhost:3000/posts`;
 
 const getPosts = () => {
-
-    console.log('posts loaded');
     fetch(url, {
         method: 'get'
     })
         .then(response => response.json())
-        .then(response => response.data)
         .then(data => {
             console.log(data);
         })
