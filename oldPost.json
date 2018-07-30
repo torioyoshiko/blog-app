@@ -2,15 +2,15 @@
   "posts": [
     {
       "id": 1,
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, quisquam."
+      "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, quisquam."
     },
     {
       "id": 2,
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, quisquam."
+      "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, quisquam."
     },
     {
       "id": 3,
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, quisquam."
+      "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, quisquam."
     }
   ]
 }

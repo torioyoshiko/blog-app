@@ -7,14 +7,13 @@ class CreatePost extends Component {
     handleSubmit = (event) => {
         event.preventDefault();
         const message = this.getMessage.value;
-        const data = {
+        const payload = {
             id: new Date(),
             message
         };
-        console.log(data);
         this.props.dispatch({
             type:'ADD_POST',
-            data});
+            payload});
         this.getMessage.value = '';
     };
 
@@ -37,3 +36,4 @@ class CreatePost extends Component {
 }
 
 export default connect()(CreatePost);
+
