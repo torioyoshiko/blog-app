@@ -1,0 +1,20 @@
+.previous-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.previous-post h1 {
+    font-size: 30px;
+}
+
+.previous-post p {
+    padding: 5px;
+    text-align: center;
+    width: 400px;
+    word-wrap: break-word;
+    border: 3px solid #cdcdcd;
+    border-radius: 10px;
+    background-color: #dcdcdc;
+}

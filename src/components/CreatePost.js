@@ -1,6 +1,7 @@
 import React from 'react';
 import {Component} from 'react';
 import {connect} from 'react-redux';
+import './CreatePost.css';
 
 class CreatePost extends Component {
 
@@ -19,16 +20,15 @@ class CreatePost extends Component {
 
     render() {
         return (
-            <div>
-                <h1>Create Post</h1>
+            <div className="create-post-form">
+                <h1>Create post</h1>
                 <form onSubmit={this.handleSubmit}>
-                    <textarea
-                        rows="10"
-                        cols="40"
+                    <input
                         ref={(input)=>this.getMessage = input}
-                        placeholder="Enter Post"
-                    /><br/><br/>
-                    <button>Try</button>
+                        placeholder="Enter post"
+                    />
+                    <br/>
+                    <button>ADD</button>
                 </form>
             </div>
         );

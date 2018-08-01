@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import Post from './loadPosts';
 import getPosts from '../actions/posts';
+import './AllPost.css';
 
 class AllPost extends Component {
 
@@ -12,9 +13,9 @@ class AllPost extends Component {
     render() {
 
         return (
-            <div className="App">
+            <div className="previous-post">
                 <h1>Previous posts</h1>
-                {this.props.posts.map((post) => <Post key={post.id} post={post} />)}
+                {this.props.posts.map((post) => <Post key={post.id} post={post} className="previous-post-text"/>)}
                 {/*не будут отображаться старые посты*/}
             </div>
         );
