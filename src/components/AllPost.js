@@ -16,7 +16,7 @@ class AllPost extends Component {
             <div className="previous-post">
                 <h1>Previous posts</h1>
                 {this.props.posts.map((post) => <Post key={post.id} post={post} className="previous-post-text"/>)}
-                {/*не будут отображаться старые посты*/}
+                {/*cant see old posts*/}
             </div>
         );
     }
