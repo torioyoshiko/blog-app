@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
-import './App.css';
-import AllPost from './components/AllPost';
-import CreatePost from "./components/CreatePost";
+import React, { Component } from 'react'
+import './App.css'
+import AllPost from './components/AllPost'
+import CreatePost from './components/CreatePost'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-          <AllPost/>
-          <CreatePost/>
+        <AllPost />
+        <CreatePost />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
