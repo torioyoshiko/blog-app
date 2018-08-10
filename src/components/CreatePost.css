@@ -7,19 +7,22 @@
 
 .create-post-form h1 {
     font-size: 30px;
+    color: white;
 }
 
 .create-post-form input {
-    width: 250px;
+    width: 350px;
     height: 100px;
     margin-bottom: 15px;
-    border: 3px solid #cdcdcd;
+    background-color: #bdbdbd;
+    border: 3px solid #015767;
     border-radius: 10px;
     text-align: center;
 }
 
 .create-post-form button {
-    border: 3px solid #cdcdcd;
+    padding: 3px 20px;
+    border: 3px solid #015767;
     border-radius: 5px;
     background-color: #cdcdcd;
 }

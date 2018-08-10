@@ -7,6 +7,7 @@
 
 .previous-post h1 {
     font-size: 30px;
+    color: white;
 }
 
 .previous-post p {
@@ -14,6 +15,7 @@
     text-align: center;
     width: 400px;
     word-wrap: break-word;
-    border: 3px solid #cdcdcd;
+    background-color: #bdbdbd;
+    border: 3px solid #015767;
     border-radius: 10px;
 }
