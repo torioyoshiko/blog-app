@@ -10,7 +10,17 @@
     color: white;
 }
 
-.create-post-form input {
+.post-h2 {
+    background-color: #bdbdbd;
+    border: 3px solid #015767;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.post-text {
     width: 350px;
     height: 100px;
     margin-bottom: 15px;

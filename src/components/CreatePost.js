@@ -7,14 +7,17 @@ class CreatePost extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
+        const title = this.getTitle.value;
         const message = this.getMessage.value;
         const payload = {
             id: new Date(),
+            title,
             message
         };
         this.props.dispatch({
             type:'ADD_POST',
             payload});
+        this.getTitle.value = '';
         this.getMessage.value = '';
     };
 
@@ -24,8 +27,16 @@ class CreatePost extends Component {
                 <h1>Create post</h1>
                 <form onSubmit={this.handleSubmit}>
                     <input
+                        placeholder="Enter Post Title"
+                        ref={(input)=>this.getTitle = input}
+                        className="post-h2"
+                        required
+                    /> <br/>
+                    <input
                         ref={(input)=>this.getMessage = input}
                         placeholder="Enter post"
+                        className="post-text"
+                        required
                     />
                     <br/>
                     <button>ADD</button>
