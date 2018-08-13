@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import Post from './loadPosts'
 import getPosts from '../actions/posts'
-import './AllPost.css'
+import './css/AllPost.css'
 
 class AllPost extends Component {
   componentDidMount() {

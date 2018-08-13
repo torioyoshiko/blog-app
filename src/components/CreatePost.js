@@ -1,7 +1,7 @@
 import React from 'react';
 import { Component } from 'react';
 import {connect} from 'react-redux';
-import './CreatePost.css';
+import './css/CreatePost.css';
 
 class CreatePost extends Component {
 
